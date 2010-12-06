@@ -61,6 +61,7 @@ void CTplotCalibration(const char * mainFile = "", const char * bgFile = "",
   hist1->SetStats(kFALSE);
   hist1->GetXaxis()->SetTitle("X axis title");
   hist1->GetYaxis()->SetTitle("Y axis title");
+  //amb79
   TCanvas *myc1 =new TCanvas("myc1","Sig");
   hist1->Draw("e");
 
@@ -72,6 +73,7 @@ void CTplotCalibration(const char * mainFile = "", const char * bgFile = "",
 
   //Get the signal minus background
   hist3 ->Add(hist1,hist2,1.0,-1.0);
+  //amb79
   TCanvas *myc3 =new TCanvas("myc3","Final");
   hist3->Draw();
 
@@ -85,12 +87,12 @@ void CTplotCalibration(const char * mainFile = "", const char * bgFile = "",
  fit1 ->SetParameters(500., c, 300.0, 100.0, 0.0, 0.0, 0.0); 
   Double_t xl1=d; //3000.;
   Double_t xh1=e; //9000.;
-  //hist3  ->Fit("fit1","R"," ",xl1,xh1);
- // hist3->Draw();
+  hist3  ->Fit("fit1","R"," ",xl1,xh1);
+  hist3->Draw();
 // hist1  ->Fit("fit1","R"," ",xl1,xh1);
 //  hist1->Draw();
-hist2  ->Fit("fit1","R"," ",xl1,xh1);
-  hist2->Draw();
+//hist2  ->Fit("fit1","R"," ",xl1,xh1);
+//hist2->Draw();
 }
 
 Double_t Pol2(Double_t *x, Double_t *par)
