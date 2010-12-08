@@ -1,8 +1,8 @@
 set term postscript eps 
 set output 'plot2.eps'
 
-set xlabel 'some label' rotate by 90 left
-set ylabel 'some label'
+set xlabel 'Angle' rotate by 90 left
+set ylabel 'Cross Section'
 
 #set title 'Period Doubling Diagram'
 set offset 0.1, 0.1, 0.1, 0.1 
