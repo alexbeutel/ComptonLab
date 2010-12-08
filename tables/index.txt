@@ -1,0 +1,4 @@
+tab1 - angle, E, Eerr, Etheory
+tab2 - angle, efficiency, efficiency err
+tab3 -angle, Ntheta, Nthetaerr, time, countingrate, countrate err - NO 0 Degrees
+tab4 -angle, cross secton, cross section err, cross section theory
