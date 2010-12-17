@@ -7,19 +7,18 @@ Cross section
 Cross section error
 
 \begin{align}
-\delta \frac{d\sigma}{d\Omega}=\sqrt{
-	(\frac{1}{L \epsilon(\theta) n d\Omega} \delta C)^2+
-	(\frac{-C}{L^2 \epsilon(\theta) n d \Omega} \delta L)^2+
-	(\frac{-C}{L \epsilon(\theta)^2 n d\Omega} \delta \epsilon(\theta))^2
-	(\frac{-C}{L \epsilon(\theta) n^2 d\Omega} \delta n)^2
-	(\frac{-C}{L \epsilon(\theta) n (d\Omega)^2} \delta (d\Omega))^2
-	}
+   a_1 &= \frac{1}{L \epsilon(\theta) n d\Omega} \delta C                    \\
+   a_2 &= \frac{-C}{L^2 \epsilon(\theta) n d \Omega} \delta L                \\
+   a_3 &= \frac{-C}{L \epsilon(\theta)^2 n d\Omega} \delta \epsilon(\theta)  \\
+   a_4 &= \frac{-C}{L \epsilon(\theta) n^2 d\Omega} \delta n                 \\
+   a_5 &= \frac{-C}{L \epsilon(\theta) n (d\Omega)^2} \delta (d\Omega)       \\
+\delta \frac{d\sigma}{d\Omega}&=\sqrt{a_1^2 + a_2^2 + a_3^2 + a_4^2 + a_5^2 }
 \end{align}
 
 Counting rate
 
 \begin{align}
-	C=\frac{N_\theta}{\delta_\theta}
+	C=\frac{N_\theta}{\Delta t_\theta}
 \end{align}
 
 where
@@ -33,9 +32,9 @@ is the integral of a gaussian fitted to a count histogram peak.
 Counting rate error
 
 \begin{align}
-\delta C = \frac{1}{\delta t_\theta} \sqrt{
-	(\frac{\sqrt{2 \pi} A}{S} \delta \sigma)^2+
-	(\frac{\sqrt{2 \pi} \sigma}{S} \delta A)^2
+\delta C = \frac{1}{\Delta t_\theta} \sqrt{
+   \left(\frac{\sqrt{2 \pi} A}{S} \delta \sigma\right)^2+
+	\left(\frac{\sqrt{2 \pi} \sigma}{S} \delta A\right)^2
 }
 \end{align}
 
@@ -46,13 +45,13 @@ See table \ref{} for efficiency error.
 n
 
 \begin{align}
-	n=\frac{\rho_Al N_A l Z}{m_Al}
+	n=\frac{\rho_{\rm Al} N_A l Z}{m_{\rm Al}}
 \end{align}
 
 n error
 
 \begin{align}
-	\delta n = \frac{\rho_Al N_A Z \delta l}{m_Al}
+	\delta n = \frac{\rho_{\rm Al} N_A Z \delta l}{m_{\rm Al}}
 \end{align}
 
 Solid angle error
@@ -71,10 +70,10 @@ Slope fit
 Slope fit error
 
 \begin{align}
-	\delta E = \sqrt{
-	(\frac{\delta C}{m})^2+
-	(\frac{(b-c)\delta m}{m^2})^2+
-	(\frac{\delta b}{m})^2
+    \delta E = \sqrt{
+    \left(\frac{\delta C}{m}\right)^2+
+    \left(\frac{(b-c)\delta m}{m^2}\right)^2+
+    \left(\frac{\delta b}{m}\right)^2
 	}
 \end{align}
 
