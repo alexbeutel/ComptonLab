@@ -2,7 +2,7 @@ set term postscript eps
 #color blacktext "Times-Roman" 24 size 5,3
 set output 'plot1.eps'
 
-set xlabel 'Angle' rotate by 90 left
+set xlabel 'Angle (Degrees)' rotate by 90 left
 set ylabel 'Energy (Mev)'
 
 #set title 'Period Doubling Diagram'
