@@ -1,0 +1,80 @@
+Cross section
+
+\begin{align}
+	\frac{d\sigma}{d\Omega}=\frac{C}{L \epsilon(\theta) n d\Omega}
+\end{align}
+
+Cross section error
+
+\begin{align}
+\delta \frac{d\sigma}{d\Omega}=\sqrt{
+	(\frac{1}{L \epsilon(\theta) n d\Omega} \delta C)^2+
+	(\frac{-C}{L^2 \epsilon(\theta) n d \Omega} \delta L)^2+
+	(\frac{-C}{L \epsilon(\theta)^2 n d\Omega} \delta \epsilon(\theta))^2
+	(\frac{-C}{L \epsilon(\theta) n^2 d\Omega} \delta n)^2
+	(\frac{-C}{L \epsilon(\theta) n (d\Omega)^2} \delta (d\Omega))^2
+	}
+\end{align}
+
+Counting rate
+
+\begin{align}
+	C=\frac{N_\theta}{\delta_\theta}
+\end{align}
+
+where
+
+\begin{align}
+	N_\theta=\frac{\sqrt{2 \pi} \sigma A}{S}
+\end{align}
+
+is the integral of a gaussian fitted to a count histogram peak.
+
+Counting rate error
+
+\begin{align}
+\delta C = \frac{1}{\delta t_\theta} \sqrt{
+	(\frac{\sqrt{2 \pi} A}{S} \delta \sigma)^2+
+	(\frac{\sqrt{2 \pi} \sigma}{S} \delta A)^2
+}
+\end{align}
+
+(Luminosity error is identical to counting rate error but is calculated using data collected at 0 degrees)
+
+See table \ref{} for efficiency error.
+
+n
+
+\begin{align}
+	n=\frac{\rho_Al N_A l Z}{m_Al}
+\end{align}
+
+n error
+
+\begin{align}
+	\delta n = \frac{\rho_Al N_A Z \delta l}{m_Al}
+\end{align}
+
+Solid angle error
+
+\begin{align}
+	\delta (d\Omega)=
+		\frac{2 \pi R^2 \delta (dL)}{L^3}
+\end{align}
+
+Slope fit
+
+\begin{align}
+	E=\frac{c-b}{m}
+\end{align}
+
+Slope fit error
+
+\begin{align}
+	\delta E = \sqrt{
+	(\frac{\delta C}{m})^2+
+	(\frac{(b-c)\delta m}{m^2})^2+
+	(\frac{\delta b}{m})^2
+	}
+\end{align}
+
